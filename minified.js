@@ -38,9 +38,11 @@ inputPassword.addEventListener('input', (e) => {
 
 formPassword.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (!Object.values(validatedPassword).every(Boolean)) {
-        alert('Password anda tidak sesuai');
-    } else {
-        alert('Password anda sangat crot');
+    if(validatedPassword) {
+        if (!Object.values(validatedPassword).every(Boolean)) {
+            alert('Password anda tidak sesuai');
+        } else {
+            alert('Password anda sangat crot');
+        }
     }
 });

@@ -58,6 +58,8 @@ formPassword.addEventListener('submit', (e) => {
     if(validatedPassword) {
         if (!(validatedPassword.lowercase && validatedPassword.uppercase && validatedPassword.numberAndSymbol && validatedPassword.minimumChar)) {
             alert('Password anda tidak sesuai')
+        } else {
+            alert('Password anda sangat crot');
         }
     }
 })
